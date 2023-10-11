@@ -4,7 +4,7 @@ import ConsoleMenu.ConsoleMenu;
 import business.Task;
 import service.TaskService;
 import service.TaskServiceImpl;
-import app.TaskView;
+import app.TaskInput;
 
 import java.util.List;
 import java.util.Scanner;
@@ -19,6 +19,8 @@ public class test {
             List<Task> tasks = taskService.getAllTasks();
 
             TaskView taskView = new TaskView();
+
+            TaskInput taskInput = new TaskInput();
 
 
             ConsoleMenu menu = new ConsoleMenu();
@@ -43,11 +45,7 @@ public class test {
                      * 2. Permet de notifier une tâche comme terminée
                      */
                     case 2:
-                        int userInt = input.nextInt()-1;
-                        Task taskToComplete = tasks.get(userInt);
-                        taskService.markTaskAsCompleted(taskToComplete);
-
-                        System.out.println("Tâche marquée comme terminée : " + taskToComplete.getDescription());
+                        taskInput.userInput(taskService, tasks);
                         break;
                     /**
                      * 3. Permet de supprimer une tâche terminée

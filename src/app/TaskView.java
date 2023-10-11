@@ -2,8 +2,7 @@ package app;
 
 import java.util.List;
 import business.Task;
-import service.TaskService;
-import service.TaskServiceImpl;
+
 
 
 public class TaskView {
