@@ -14,5 +14,4 @@ Ce projet est un gestionnaire de tâches simple qui permet à l'utilisateur de g
 4. Affichage de la liste de toutes les tâches sélectionnez 4
 5. Quitter l'application : sélectionnez 5
 
-   ## Exemple d'utilisation
    
