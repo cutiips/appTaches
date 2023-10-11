@@ -1,6 +1,5 @@
 package business;
 
-import java.util.Objects;
 
 /**
  * Classe représentant une tâche à faire.
