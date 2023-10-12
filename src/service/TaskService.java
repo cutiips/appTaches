@@ -26,7 +26,7 @@ public interface TaskService {
      *
      * @param task La tâche à marquer comme terminée.
      */
-    void markTaskAsCompleted(Task task);
+    void markTaskAsCompleted(Task task) throws ServiceException ;
 
     /**
      * Supprime toutes les tâches marquées comme terminées de la liste.

@@ -1,10 +1,11 @@
 package app;
 
 import ConsoleMenu.ConsoleMenu;
+import business.BusinessException;
 import business.Task;
+import service.ServiceException;
 import service.TaskService;
 import service.TaskServiceImpl;
-import app.TaskInput;
 
 import java.util.List;
 import java.util.Scanner;
@@ -12,6 +13,7 @@ import java.util.Scanner;
 
 public class test {
         public static void main(String[] args) {
+
             Scanner input = new Scanner(System.in);
 
             TaskService taskService = new TaskServiceImpl();
@@ -41,12 +43,21 @@ public class test {
                         String userStr = input.nextLine();
                         taskService.addTask(userStr);
                         break;
+
                     /**
                      * 2. Permet de notifier une tâche comme terminée
+                     *
+                     * @param taskService, service de gestion des tâches
+                     * @param tasks, liste des tâches disponibles
                      */
                     case 2:
-                        taskInput.userInput(taskService, tasks);
+                        try {
+                            taskInput.userInput(taskService, tasks);
+                        } catch (ServiceException e) {
+                            System.out.println("Erreur : "+e.getMessage());
+                        }
                         break;
+
                     /**
                      * 3. Permet de supprimer une tâche terminée
                      */
@@ -60,6 +71,7 @@ public class test {
                     case 4:
                         System.out.println(taskView.displayTasks(taskService.getAllTasks()));
                         break;
+
                     /**
                      * Permet de quitter l'application
                      */

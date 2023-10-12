@@ -1,5 +1,7 @@
 package service;
 
+import business.BusinessException;
+import service.ServiceException;
 import business.Task;
 import business.TaskManager;
 
@@ -47,8 +49,12 @@ public class TaskServiceImpl implements TaskService {
      * @param task La tâche à marquer comme terminée.
      */
     @Override
-    public void markTaskAsCompleted(Task task) {
-        taskManager.markTaskAsCompleted(task);
+    public void markTaskAsCompleted(Task task) throws ServiceException {
+        try {
+            taskManager.markTaskAsCompleted(task);
+        } catch (BusinessException e) {
+            throw new ServiceException(e.getMessage(), e);
+        }
     }
 
     /**
