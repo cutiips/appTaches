@@ -1,7 +1,6 @@
 package app;
 
 import ConsoleMenu.ConsoleMenu;
-import business.BusinessException;
 import business.Task;
 import service.ServiceException;
 import service.TaskService;
