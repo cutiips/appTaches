@@ -8,7 +8,18 @@ import service.TaskService;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Classe pour la gestion de l'entrée de l'utilisateur liée aux tâches
+ */
+
 public class TaskInput {
+
+    /**
+     * Gère les input de l'utilisateur pour marquer une tâche comme terminée
+     * @param taskServiceIN, le service de gestion des tâches
+     * @param tasksIN, la liste des tâches disponibles
+     * @throws ServiceException, si une erreur survient lors de la gestion des tâches
+     */
     public void userInput (TaskService taskServiceIN, List<Task> tasksIN) throws ServiceException {
         Scanner input = new Scanner(System.in);
         int userInt = input.nextInt()-1;
