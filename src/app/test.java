@@ -1,6 +1,7 @@
 package app;
 
 import ConsoleMenu.ConsoleMenu;
+import business.RecurringTask;
 import business.Task;
 import service.ServiceException;
 import service.TaskService;
@@ -71,10 +72,20 @@ public class test {
                         System.out.println(taskView.displayTasks(taskService.getAllTasks()));
                         break;
 
+                    case 5 :
+                        RecurringTask recurringTask = new RecurringTask("test", 7);
+
+                        recurringTask.markAsCompleted();
+
+                        tasks.add(recurringTask);
+
+                        System.out.println("Tâche récurrente terminée : "+recurringTask.isCompleted());
+                        break;
+
                     /**
                      * Permet de quitter l'application
                      */
-                    case 5:
+                    case 6:
                         System.out.println("Au revoir !");
                         System.exit(0);
                     default:
