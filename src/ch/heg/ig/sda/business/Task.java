@@ -1,17 +1,17 @@
-package business;
+package ch.heg.ig.sda.business;
 
 
 /**
- * Classe représentant une tâche à faire.
+ * Classe représentant une tâche à faire
  */
 public class Task {
     private String description;
     private boolean completed;
 
     /**
-     * Constructeur de la classe Task.
+     * Constructeur de la classe Task
      *
-     * @param description La description de la tâche.
+     * @param description La description de la tâche
      */
     public Task(String description) {
         this.description = description;
@@ -19,18 +19,18 @@ public class Task {
     }
 
     /**
-     * Obtient la description de la tâche.
+     * Obtient la description de la tâche
      *
-     * @return La description de la tâche.
+     * @return La description de la tâche
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     * Vérifie si la tâche est terminée.
+     * Vérifie si la tâche est terminée
      *
-     * @return True si la tâche est terminée, sinon false.
+     * @return True si la tâche est terminée, sinon false
      */
     public boolean isCompleted() {
         return completed;
@@ -44,9 +44,9 @@ public class Task {
     }
 
     /**
-     * Fournit une représentation sous forme de chaîne de la tâche.
+     * Fournit une représentation sous forme de chaîne de la tâche
      *
-     * @return Une chaîne représentant la tâche, incluant la description et l'état de complétion.
+     * @return Une chaîne représentant la tâche, incluant la description et l'état de complétion
      */
     @Override
     public String toString() {

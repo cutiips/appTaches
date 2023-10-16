@@ -1,7 +1,7 @@
-package service;
+package ch.heg.ig.sda.service;
 
 /**
- * Une exception personnalisée pour les erreurs spécifiques de la couche de service
+ * Une exception personnalisée pour les erreurs spécifiques de la couche de ch.heg.ig.sda.service
  */
 public class ServiceException extends Exception{
 

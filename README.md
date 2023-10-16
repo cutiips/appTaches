@@ -3,9 +3,9 @@
 Ce projet est un gestionnaire de tâches simple qui permet à l'utilisateur de gérer une liste de tâches à faire. 
 
 ## Structure du projet
-- 'app' : contient la classe 'Main' qui gère l'interface utilisateur
-- 'service' : contient l'interface 'TaskService' et son implémentation 'TaskServiceImpl' pour la gestion des tâches
-- 'business' : contient les classes 'Task' et 'TaskManager' pour représenter et gérer les tâches
+- 'ch.heg.ig.sda.app' : contient la classe 'Main' qui gère l'interface utilisateur
+- 'ch.heg.ig.sda.service' : contient l'interface 'TaskService' et son implémentation 'TaskServiceImpl' pour la gestion des tâches
+- 'ch.heg.ig.sda.business' : contient les classes 'Task' et 'TaskManager' pour représenter et gérer les tâches
 
 ## Fonctionnalités et utilisation
 1. Ajout d'une nouvelle tâche : sélectionnez 1 et entrez la description de la tâche

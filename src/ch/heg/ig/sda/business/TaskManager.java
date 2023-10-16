@@ -1,45 +1,45 @@
-package business;
+package ch.heg.ig.sda.business;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Gestionnaire de tâches permettant d'ajouter, de marquer comme terminées
- * et de supprimer des tâches.
+ * et de supprimer des tâches
  */
 public class TaskManager {
     private List<Task> tasks;
 
     /**
-     * Constructeur de la classe TaskManager.
-     * Initialise une liste de tâches vide.
+     * Constructeur de la classe TaskManager
+     * Initialise une liste de tâches vide
      */
     public TaskManager() {
         tasks = new ArrayList<>();
     }
 
     /**
-     * Ajoute une tâche à la liste des tâches.
+     * Ajoute une tâche à la liste des tâches
      *
-     * @param task La tâche à ajouter.
+     * @param task La tâche à ajouter
      */
     public void addTask(Task task) {
         tasks.add(task);
     }
 
     /**
-     * Récupère toutes les tâches dans la liste.
+     * Récupère toutes les tâches dans la liste
      *
-     * @return La liste de toutes les tâches.
+     * @return La liste de toutes les tâches
      */
     public List<Task> getAllTasks() {
         return tasks;
     }
 
     /**
-     * Marque une tâche spécifique comme terminée.
+     * Marque une tâche spécifique comme terminée
      *
-     * @param task La tâche à marquer comme terminée.
+     * @param task La tâche à marquer comme terminée
      */
     public void markTaskAsCompleted(Task task) throws BusinessException {
         for (Task t : tasks) {
@@ -52,7 +52,7 @@ public class TaskManager {
     }
 
     /**
-     * Supprime toutes les tâches marquées comme terminées de la liste.
+     * Supprime toutes les tâches marquées comme terminées de la liste
      */
     public void removeCompletedTasks() {
         tasks.removeIf(Task::isCompleted);

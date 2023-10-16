@@ -1,10 +1,10 @@
-package app;
+package ch.heg.ig.sda.app;
 
 import ConsoleMenu.ConsoleMenu;
-import business.Task;
-import service.ServiceException;
-import service.TaskService;
-import service.TaskServiceImpl;
+import ch.heg.ig.sda.business.Task;
+import ch.heg.ig.sda.service.ITaskService;
+import ch.heg.ig.sda.service.ServiceException;
+import ch.heg.ig.sda.service.TaskServiceImpl;
 
 import java.util.List;
 import java.util.Scanner;
@@ -15,7 +15,7 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
 
-        TaskService taskService = new TaskServiceImpl();
+        ITaskService taskService = new TaskServiceImpl();
 
         List<Task> tasks = taskService.getAllTasks();
 
@@ -46,7 +46,7 @@ public class Main {
                 /**
                  * 2. Permet de notifier une tâche comme terminée
                  *
-                 * @param taskService, service de gestion des tâches
+                 * @param taskService, ch.heg.ig.sda.service de gestion des tâches
                  * @param tasks, liste des tâches disponibles
                  */
                 case 2:

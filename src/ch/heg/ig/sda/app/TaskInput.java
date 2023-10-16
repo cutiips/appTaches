@@ -1,8 +1,8 @@
-package app;
+package ch.heg.ig.sda.app;
 
-import business.Task;
-import service.ServiceException;
-import service.TaskService;
+import ch.heg.ig.sda.business.Task;
+import ch.heg.ig.sda.service.ITaskService;
+import ch.heg.ig.sda.service.ServiceException;
 
 
 import java.util.List;
@@ -16,11 +16,11 @@ public class TaskInput {
 
     /**
      * Gère les input de l'utilisateur pour marquer une tâche comme terminée
-     * @param taskServiceIN, le service de gestion des tâches
+     * @param taskServiceIN, le ch.heg.ig.sda.service de gestion des tâches
      * @param tasksIN, la liste des tâches disponibles
      * @throws ServiceException, si une erreur survient lors de la gestion des tâches
      */
-    public void userInput (TaskService taskServiceIN, List<Task> tasksIN) throws ServiceException {
+    public void userInput (ITaskService taskServiceIN, List<Task> tasksIN) throws ServiceException {
         Scanner input = new Scanner(System.in);
         int userInt = input.nextInt()-1;
 

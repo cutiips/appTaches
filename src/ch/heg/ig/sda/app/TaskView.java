@@ -1,7 +1,7 @@
-package app;
+package ch.heg.ig.sda.app;
 
 import java.util.List;
-import business.Task;
+import ch.heg.ig.sda.business.Task;
 
 /**
  * Classe pour afficher la liste des tâches sous forme de String
