@@ -14,16 +14,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="ConsoleMenuLibrary" level="project" />
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../librairiesExt/ConsoleMenuLibrary/out/artifacts/ConsoleMenuLibrary_jar/ConsoleMenuLibrary.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
     <orderEntry type="library" exported="" name="lib" level="project" />
   </component>
 </module>
