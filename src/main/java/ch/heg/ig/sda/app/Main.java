@@ -3,7 +3,6 @@ package ch.heg.ig.sda.app;
 import ConsoleMenu.ConsoleMenu;
 import ch.heg.ig.sda.business.Task;
 import ch.heg.ig.sda.service.ITaskService;
-import ch.heg.ig.sda.service.ServiceException;
 import ch.heg.ig.sda.service.TaskServiceImpl;
 
 import java.util.List;

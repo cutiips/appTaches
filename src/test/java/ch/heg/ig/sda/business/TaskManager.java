@@ -1,4 +1,4 @@
-package java.sda.business;
+package ch.heg.ig.sda.business;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package java.sda.business;
+package ch.heg.ig.sda.business;
 
 import java.time.LocalDate;
 
@@ -6,7 +6,7 @@ import java.time.LocalDate;
  * Classe en phase test représentant une tâche récurrente
  * Cette classe hérite de la classe Task
  */
-public class RecurringTask extends Task {
+public class RecurringTask extends Task{
    private final int dayRec;
 
    /**

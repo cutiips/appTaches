@@ -1,9 +1,9 @@
-package java.sda.app;
+package ch.heg.ig.sda.app;
 
+import ch.heg.ig.sda.business.Task;
+import ch.heg.ig.sda.service.ITaskService;
+import ch.heg.ig.sda.service.ServiceException;
 
-import java.sda.business.Task;
-import java.sda.service.ITaskService;
-import java.sda.service.ServiceException;
 import java.util.List;
 import java.util.Scanner;
 

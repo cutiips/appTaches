@@ -1,6 +1,7 @@
-package java.sda.app;
+package ch.heg.ig.sda.app;
 
-import java.sda.business.Task;
+import ch.heg.ig.sda.business.Task;
+
 import java.util.List;
 
 /**

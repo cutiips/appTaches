@@ -1,8 +1,9 @@
-package java.sda.service;
+package ch.heg.ig.sda.service;
 
-import java.sda.business.BusinessException;
-import java.sda.business.Task;
-import java.sda.business.TaskManager;
+import ch.heg.ig.sda.business.BusinessException;
+import ch.heg.ig.sda.business.Task;
+import ch.heg.ig.sda.business.TaskManager;
+
 import java.util.List;
 
 /**
@@ -47,7 +48,7 @@ public class TaskServiceImpl implements ITaskService {
      * @param task La tâche à marquer comme terminée
      */
     @Override
-    public final void markTaskAsCompleted(Task task) throws ServiceException {
+    public void markTaskAsCompleted(Task task) throws ServiceException {
         try {
             taskManager.markTaskAsCompleted(task);
         } catch (BusinessException e) {

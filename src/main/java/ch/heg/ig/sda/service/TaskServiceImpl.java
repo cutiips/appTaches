@@ -48,7 +48,7 @@ public class TaskServiceImpl implements ITaskService {
      * @param task La tâche à marquer comme terminée
      */
     @Override
-    public final void markTaskAsCompleted(Task task) throws ServiceException {
+    public void markTaskAsCompleted(Task task) throws ServiceException {
         try {
             taskManager.markTaskAsCompleted(task);
         } catch (BusinessException e) {

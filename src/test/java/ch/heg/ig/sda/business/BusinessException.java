@@ -1,6 +1,6 @@
-package java.sda.business;
+package ch.heg.ig.sda.business;
 
-import java.sda.service.ServiceException;
+import ch.heg.ig.sda.service.ServiceException;
 
 /**
  * Une exception personnalisée pour les erreurs spécifiques de la couche métier

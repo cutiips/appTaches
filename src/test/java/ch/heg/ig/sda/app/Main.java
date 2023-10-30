@@ -1,10 +1,10 @@
-package java.sda.app;
+package ch.heg.ig.sda.app;
 
 import ConsoleMenu.ConsoleMenu;
+import ch.heg.ig.sda.business.Task;
+import ch.heg.ig.sda.service.ITaskService;
+import ch.heg.ig.sda.service.TaskServiceImpl;
 
-import java.sda.business.Task;
-import java.sda.service.ITaskService;
-import java.sda.service.TaskServiceImpl;
 import java.util.List;
 import java.util.Scanner;
 
