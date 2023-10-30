@@ -1,5 +1,7 @@
 package ch.heg.ig.sda.business;
 
+import ch.heg.ig.sda.service.ServiceException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,14 +45,14 @@ public class TaskManager {
      *
      * @param task La tâche à marquer comme terminée
      */
-    public void markTaskAsCompleted(Task task) throws BusinessException {
+    public void markTaskAsCompleted(Task task) throws ServiceException {
         for (Task t : tasks) {
             if (t.equals(task)) {
                 t.markAsCompleted();
                 return;
             }
         }
-        throw new BusinessException("La tâche n'existe pas.");
+        throw new ServiceException("La tâche n'existe pas.");
     }
 
     /**

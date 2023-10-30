@@ -13,4 +13,14 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>ConsoleMenuLibrary</groupId>
+            <artifactId>ConsoleMenuLibrary</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <systemPath>${project.basedir}/lib/ConsoleMenuLibrary.jar</systemPath>
+        </dependency>
+    </dependencies>
+
+
 </project>
