@@ -7,7 +7,7 @@ import java.time.LocalDate;
  * Cette classe hérite de la classe Task
  */
 public class RecurringTask extends Task{
-   private int dayRec;
+   private final int dayRec;
 
    /**
     * Constructeur de la classe Task.
@@ -21,9 +21,9 @@ public class RecurringTask extends Task{
    }
 
    /**
-    * Obtient le jour de récurrence de la tâche.
+    * Obtient le jour de récurrence de la tâche
     *
-    * @return Le jour de récurrence de la tâche.
+    * @return Le jour de récurrence de la tâche
     */
    public int getDayRec(){
        return dayRec;
@@ -40,5 +40,4 @@ public class RecurringTask extends Task{
 
         LocalDate nextRecurrence = dateDebut.plusDays(dayRec);
     }
-
 }

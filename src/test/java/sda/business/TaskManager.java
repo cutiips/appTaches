@@ -1,4 +1,4 @@
-package ch.heg.ig.sda.business;
+package java.sda.business;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,11 +8,13 @@ import java.util.List;
  * et de supprimer des tâches
  */
 public class TaskManager {
-    private List<Task> tasks;
+    private final List<Task> tasks;
 
     /**
      * Constructeur de la classe TaskManager
      * Initialise une liste de tâches vide
+     *
+     *
      */
     public TaskManager() {
         tasks = new ArrayList<>();
@@ -23,7 +25,7 @@ public class TaskManager {
      *
      * @param task La tâche à ajouter
      */
-    public void addTask(Task task) {
+    public void  addTask(Task task) {
         tasks.add(task);
     }
 

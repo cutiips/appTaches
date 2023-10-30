@@ -5,7 +5,7 @@ package ch.heg.ig.sda.business;
  * Classe représentant une tâche à faire
  */
 public class Task {
-    private String description;
+    private final String description;
     private boolean completed;
 
     /**
@@ -37,7 +37,7 @@ public class Task {
     }
 
     /**
-     * Marque la tâche comme terminée.
+     * Marque la tâche comme terminée
      */
     public void markAsCompleted() {
         completed = true;

@@ -9,6 +9,7 @@ public class BusinessException extends ServiceException {
 
     /**
      * Constructeur avec un message d'erreur
+     *
      * @param message, le message d'erreur
      */
     public BusinessException(String message){

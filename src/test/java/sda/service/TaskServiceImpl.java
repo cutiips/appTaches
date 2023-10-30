@@ -1,9 +1,8 @@
-package ch.heg.ig.sda.service;
+package java.sda.service;
 
-import ch.heg.ig.sda.business.BusinessException;
-import ch.heg.ig.sda.business.Task;
-import ch.heg.ig.sda.business.TaskManager;
-
+import java.sda.business.BusinessException;
+import java.sda.business.Task;
+import java.sda.business.TaskManager;
 import java.util.List;
 
 /**
@@ -11,10 +10,10 @@ import java.util.List;
  * de gestion des tâches en utilisant TaskManager
  */
 public class TaskServiceImpl implements ITaskService {
-    private TaskManager taskManager;
+    private final TaskManager taskManager;
 
     /**
-     * Constructeur de la classe TaskServiceImpl.
+     * Constructeur de la classe TaskServiceImpl
      * Initialise un gestionnaire de tâches.
      */
     public TaskServiceImpl() {
@@ -27,7 +26,7 @@ public class TaskServiceImpl implements ITaskService {
      * @param description La description de la tâche à ajouter
      */
     @Override
-    public void addTask(String description) {
+    public final void addTask(String description) {
         Task task = new Task(description);
         taskManager.addTask(task);
     }
@@ -38,7 +37,7 @@ public class TaskServiceImpl implements ITaskService {
      * @return La liste de toutes les tâches
      */
     @Override
-    public List<Task> getAllTasks() {
+    public final List<Task> getAllTasks() {
         return taskManager.getAllTasks();
     }
 
@@ -48,7 +47,7 @@ public class TaskServiceImpl implements ITaskService {
      * @param task La tâche à marquer comme terminée
      */
     @Override
-    public void markTaskAsCompleted(Task task) throws ServiceException {
+    public final void markTaskAsCompleted(Task task) throws ServiceException {
         try {
             taskManager.markTaskAsCompleted(task);
         } catch (BusinessException e) {
@@ -60,7 +59,7 @@ public class TaskServiceImpl implements ITaskService {
      * Supprime toutes les tâches marquées comme terminées de la liste
      */
     @Override
-    public void removeCompletedTasks() {
+    public final void removeCompletedTasks() {
         taskManager.removeCompletedTasks();
     }
 }
