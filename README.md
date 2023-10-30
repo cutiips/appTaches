@@ -24,11 +24,18 @@ Ce projet a été réalisé dans le cadre du cours de SDA (Structure de données
   - RecurrentTask : est une sous-classe de Task et représente une tâche récurrente
   - BusinessTaskException : gestion des exceptions pour la couche métier
 
-## Fonctionnalités et utilisation
+## Fonctionnalités
 1. Ajout d'une nouvelle tâche : sélectionnez 1 et entrez la description de la tâche
 2. Marquage d'une tâche comme terminée : sélectionnez 2, et entrez le numéro de la tâche à marquer comme terminée
 3. Suppression de toutes les tâches terminées : sélectionnez 3
 4. Affichage de la liste de toutes les tâches sélectionnez 4
 5. Quitter l'application : sélectionnez 5
 
+## Exécution du projet
+1. Cloner le projet
+2. Ouvrir le projet dans un IDE (IntelliJ, Eclipse, etc.)
+3. Importer la bibliothèque ConsoleMenuLibrary.jar (qui se trouve dans le dossier lib) dans le projet (dans IntelliJ : File > Project Structure > Libraries > + > Java > sélectionner le fichier ConsoleMenuLibrary.jar)
+4. Exécuter la classe Main.java
+5. Suivre les instructions affichées dans la console
+6. Enjoy!
    

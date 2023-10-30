@@ -13,8 +13,8 @@
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="ConsoleMenuLibrary" level="project" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="ConsoleMenuLibrary" level="project" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
@@ -24,5 +24,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" exported="" name="lib" level="project" />
   </component>
 </module>
