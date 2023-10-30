@@ -13,7 +13,16 @@
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
-    <orderEntry type="library" exported="" name="ConsoleMenuLibrary" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="ConsoleMenuLibrary" level="project" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../librairiesExt/ConsoleMenuLibrary/out/artifacts/ConsoleMenuLibrary_jar/ConsoleMenuLibrary.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
